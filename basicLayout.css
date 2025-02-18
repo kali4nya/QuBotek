@@ -1,0 +1,77 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    background-color: #212121;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #111;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    background: #171717;
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #111;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+/* Section Styling */
+section {
+    height: 100vh; /* Each section takes up the full screen */
+    padding: 50px;
+}
+
+/* #home { background: lightblue; }
+#about { background: lightcoral; }
+#services { background: lightgreen; }
+#contact { background: lightgoldenrodyellow; } */
+
+::selection {
+    background-color: #ca9f29; /* Change to your desired background color */
+    color: white; /* Change the text color */
+}
