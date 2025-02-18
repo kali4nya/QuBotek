@@ -28,4 +28,4 @@ setInterval(() => {
     bgImages[nextIndex].classList.add('active');
 
     currentIndex = nextIndex;
-}, 8000);
+}, 6000);

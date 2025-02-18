@@ -12,6 +12,7 @@ body {
     font-style: normal;
     font-variation-settings: "wdth" 100;
     background-color: #212121;
+    color: white;
 }
 
 .sidebar {
@@ -20,9 +21,10 @@ body {
     left: -250px;
     width: 250px;
     height: 100%;
-    background: #111;
+    background: #171717;
     padding-top: 60px;
     transition: 0.5s;
+    user-select: none;
 }
 
 .sidebar a {
@@ -31,22 +33,29 @@ body {
     text-decoration: none;
     color: white;
     font-size: 18px;
+    user-select: none;
 }
 
 .sidebar a:hover {
-    background: #171717;
+    background: #3e3e3e;
 }
 
 .toggle-btn {
     position: fixed;
-    top: 15px;
-    left: 15px;
-    font-size: 24px;
+    top: 4px;
+    left: 13px;
+    font-size: clamp(25px, 2.5vw, 200px);
     cursor: pointer;
     background: none;
     border: none;
-    color: #111;
+    color: #ffffff;
+    transition: transform 0.1s ease-in-out;
 }
+.toggle-btn:hover {
+    transform: scale(1.01);
+    transform: translateX(3px);
+}
+
 
 .close-btn {
     position: absolute;
@@ -72,6 +81,6 @@ section {
 #contact { background: lightgoldenrodyellow; } */
 
 ::selection {
-    background-color: #ca9f29; /* Change to your desired background color */
+    background-color: #e68f32; /* Change to your desired background color */
     color: white; /* Change the text color */
 }
