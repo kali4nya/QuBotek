@@ -11,7 +11,7 @@ backgrounds.forEach((image, index) => {
     const div = document.createElement('div');
     div.classList.add('bg-image');
     if (index === 0) div.classList.add('active'); // First image visible
-    div.style.backgroundImage = `linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%), url(${image})`;
+    div.style.backgroundImage = `linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.40) 100%), url(${image})`;
     home.appendChild(div);
 });
 

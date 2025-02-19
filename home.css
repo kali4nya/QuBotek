@@ -30,7 +30,7 @@
     font-style: normal;
     font-variation-settings: "wdth" 100;
     color: transparent;
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%);
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 40%);
     background-clip: text;
     text-align: center;
     margin-top: 20vh;
