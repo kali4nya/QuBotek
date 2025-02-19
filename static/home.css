@@ -1,0 +1,51 @@
+#home {
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Background image layers */
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 3s ease-in-out;
+    opacity: 0;
+    z-index: -1;
+}
+
+/* First image starts visible */
+.bg-image.active {
+    opacity: 1;
+    z-index: -1;
+}
+
+.homeTitle {
+    font-size: clamp(50px, 8vw, 500px);
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: transparent;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 40%);
+    background-clip: text;
+    text-align: center;
+    margin-top: 20vh;
+    text-shadow: 3px 5px 3px rgba(0, 27, 55, 0.3), 0 0 25px rgba(0, 100, 176, 0.6);
+    /* animation: shadowAnimation 12s infinite alternate; */
+}
+
+/* @keyframes shadowAnimation {
+    0% {
+        text-shadow: 3px 3px 10px rgba(119, 88, 4, 0.3), 0 0 50px rgba(150, 112, 62, 0.7);
+    }
+    50% {
+        text-shadow: 3px 3px 10px rgba(15, 94, 168, 0.3), 0 0 50px rgba(84, 33, 150, 0.7);
+    }
+    100% {
+        text-shadow: 3px 3px 10px rgba(102, 23, 60, 0.3), 0 0 50px rgba(114, 25, 62, 0.7);
+    }
+} */
