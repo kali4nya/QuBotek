@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    background-color: #212121;
+    color: white;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;  /* Center vertically */
+    height: 100vh; /* Full height */
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;  /* Stack elements vertically */
+    align-items: center;  /* Center content inside */
+    justify-content: center;
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 8px;
+    width: 200px;
+}
+
+.error-banner {
+    display: none;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}

@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>QuBotek</title>
+        <meta name="description" content="logistics">
+        <meta name="keywords" content="calculator, transport, freight calculator, freight, shipping, shipping calculator, logistics, logistics calculator, logistics software, transport software, freight software, shipping software, logistics management, transport management, freight management, shipping management, logistics management software, transport management software, freight management software, shipping management software, logistics software, transport software, freight software, shipping software, logistics management software, transport management software, freight management software, shipping management software, logistics management, transport management, freight management, shipping management">
+        <meta name="author" content="https://github.com/kali4nya">
+        <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+        <!-- Set Favicon -->
+        <link rel="icon" href="favicon.png" type="image/x-icon">
+        <!-- css-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='adminPanel/adminPanelLogin.css') }}">
+        <!-- fonts -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+    </head>
+    <body>
+        <div class="loginForm">
+            <h2>Admin panel login</h2>
+            <form method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Username" autocomplete="off" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" autocomplete="off" required>
+                <br>
+                <button type="submit">Login</button>
+                <div id="error-banner" class="error-banner" data-error="{{ error }}"></div>
+            </form>
+        </div>
+        <script src="{{ url_for('static', filename='adminPanel/adminPanelLoginScript.js') }}"></script>
+    </body>
+    
+</html>
