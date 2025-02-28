@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateSliderColor(value) {
         const colors = {
-            1: "#FF5733",
-            2: "#33FF57",
-            3: "#3357FF"
+            1: "#7d7d7d",
+            2: "#fb7500",
+            3: "#b00000"
         };
         slider.style.backgroundColor = colors[value] || "#333"; // Default if something breaks
     }
