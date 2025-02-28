@@ -37,7 +37,11 @@
         </section>
     
         <section id="calculator">
-            <h1>Freight calculator</h1>
+            <h1 class="calculatorSectionTitle">Freight calculator</h1>
+            <div class="wrapper">
+                <input type="range" name="points" onchange="filterme(this.value);" min="1" step="1" id="custom-toggle" class="tgl-def" max="3" value="2">
+            </div>
+            <br>
             <div class="mainCalculatorBody">
             </div>
             <div class="additionalCalculatorBody">
