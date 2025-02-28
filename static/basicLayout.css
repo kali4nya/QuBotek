@@ -43,7 +43,7 @@ body {
 .toggle-btn {
     position: fixed;
     top: 4px;
-    left: 13px;
+    left: 8px;
     font-size: clamp(25px, 2.5vw, 200px);
     cursor: pointer;
     background: none;

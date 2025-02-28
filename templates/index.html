@@ -11,7 +11,8 @@
         <link rel="icon" href="favicon.png" type="image/x-icon">
         <!-- css-->
         <link rel="stylesheet" href="{{ url_for('static', filename='basicLayout.css') }}">
-        <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='home/home.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='calculator/calculator.css') }}">
         <!-- fonts -->
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
@@ -22,7 +23,7 @@
         
         <div class="sidebar" id="sidebar">
             <a href="#home">Home</a>
-            <a href="#about">About</a>
+            <a href="#calculator">Calculator</a>
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
             <a href="#" class="close-btn" onclick="toggleSidebar(event)">✖</a>
@@ -35,9 +36,19 @@
             <h1 class="homeTitle">QuBotek</h1>
         </section>
     
-        <section id="about">
-            <h1>About</h1>
-            <p>Learn more about us here.</p>
+        <section id="calculator">
+            <h1>Freight calculator</h1>
+            <div class="mainCalculatorBody">
+            </div>
+            <div class="additionalCalculatorBody">
+            </div>
+            <div class="advancedCalculatorBody">
+            </div>
+            <div class="presetsCalculatorBody">
+            </div>
+
+            <div class="resultsCalculatorBody">
+            </div>
         </section>
     
         <section id="services">
@@ -51,5 +62,6 @@
         </section>
     
         <script src="{{ url_for('static', filename='script.js') }}"></script>
+        <script src="{{ url_for('static', filename='calculator/calculator.js') }}"></script>
     </body>
 </html>
