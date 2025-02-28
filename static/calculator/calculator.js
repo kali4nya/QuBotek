@@ -10,11 +10,42 @@ document.addEventListener("DOMContentLoaded", function () {
         slider.style.backgroundColor = colors[value] || "#333"; // Default if something breaks
     }
 
-    // Initialize color
-    updateSliderColor(slider.value);
+    function updateSliderValue(value) {
+        const values = {
+            1: "Basic",
+            2: "Additional",
+            3: "Advanced"
+        };
+        document.getElementById("calculatorMode").textContent = values[value] || "Unknown";
+    }
 
-    // Change color on input
+    function updateCalculatorVisibility(value) {
+        const additionalCalculator = document.querySelector(".additionalCalculatorBody");
+        const advancedCalculator = document.querySelector(".advancedCalculatorBody");
+    
+        additionalCalculator.style.visibility = "hidden";
+        advancedCalculator.style.visibility = "hidden";
+    
+        if (value == 2) {
+            additionalCalculator.style.visibility = "visible";
+        } else if (value == 3) {
+            additionalCalculator.style.visibility = "visible";
+            advancedCalculator.style.visibility = "visible";
+        }
+    }
+    
+    // Get the current value of the slider (in case it was saved)
+    const currentValue = slider.value;
+
+    // Initialize UI on page load
+    updateSliderColor(currentValue);
+    updateSliderValue(currentValue);
+    updateCalculatorVisibility(currentValue);
+
+    // Change UI on input
     slider.addEventListener("input", function () {
         updateSliderColor(this.value);
+        updateSliderValue(this.value);
+        updateCalculatorVisibility(this.value);
     });
 });

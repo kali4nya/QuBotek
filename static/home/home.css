@@ -38,6 +38,10 @@
     /* animation: shadowAnimation 12s infinite alternate; */
 }
 
+#home{
+    height: 85vh;
+}
+
 /* @keyframes shadowAnimation {
     0% {
         text-shadow: 3px 3px 10px rgba(119, 88, 4, 0.3), 0 0 50px rgba(150, 112, 62, 0.7);
