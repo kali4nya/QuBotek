@@ -22,15 +22,20 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateCalculatorVisibility(value) {
         const additionalCalculator = document.querySelector(".additionalCalculatorBody");
         const advancedCalculator = document.querySelector(".advancedCalculatorBody");
+        const presetsCalculator = document.querySelector(".presetsCalculatorBody");
     
         additionalCalculator.style.visibility = "hidden";
         advancedCalculator.style.visibility = "hidden";
+        presetsCalculator.style.transform = "translateX(-50vw)";
     
         if (value == 2) {
             additionalCalculator.style.visibility = "visible";
+            presetsCalculator.style.transform = "translateX(-25vw)";
+
         } else if (value == 3) {
             additionalCalculator.style.visibility = "visible";
             advancedCalculator.style.visibility = "visible";
+            presetsCalculator.style.transform = "translateX(0)";
         }
     }
     

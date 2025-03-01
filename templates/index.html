@@ -41,18 +41,63 @@
     
         <section id="calculator">
             <h1 class="calculatorSectionTitle">Freight calculator</h1>
-            <div class="wrapper">
+            <div class="sliderWrapper">
                 <input type="range" name="points" min="1" step="1" id="custom-toggle" class="tgl-def" max="3" value="1">
             </div>
             <h3 id="calculatorMode">Basic</h3>
             <br>
-            <div class="mainCalculatorBody">
+            <div class="mainCalculatorBody glowLabel">
+                <div class="inputs">
+                    <div class="inputFormating">
+                        <label class="col-span-2" for="pricePerKm">Price per km:</label>
+                        <input type="text" id="pricePerKm" class="col-span-2" placeholder="Price per km">
+                    </div>
+                    <br>
+                    <div class="inputFormating">
+                        <label class="col-span-2" for="routeLenght">Route lenght:</label>
+                        <input type="text" id="routeLenght" class="col-span-2" placeholder="Route lenght">
+                    </div>
+                    <div class="inputFormating">
+                        <label class="col-span-2" for="volume">Volume:</label>
+                        <input type="text" id="volume" class="col-span-2" placeholder="Volume">
+                        <div>
+                            <a class="text-center">to</a>
+                            <input class="maxMaxWidth" type="text" id="volumeMax" placeholder="Max" value="80">
+                        </div>
+                    </div>
+                    <div class="inputFormating">
+                        <label class="col-span-2" for="loadingArea">Loading area:</label>
+                        <input type="text" id="loadingArea" class="col-span-2" placeholder="Loading area">
+                        <div>
+                            <a class="text-center">to</a>
+                            <input class="maxMaxWidth" type="text" id="loadingAreaMax" placeholder="Max" value="13.20">
+                        </div>
+                    </div>
+                    <div class="inputFormating">
+                        <label class="col-span-2" for="weight">Weight:</label>
+                        <input type="text" id="weight" class="col-span-2" placeholder="Weight">
+                        <div>
+                            <a class="text-center">to</a>
+                            <input class="maxMaxWidth" type="text" id="weightMax" placeholder="Max" value="24000">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="additionalCalculatorBody">
+            <div class="additionalCalculatorBody glowLabel">
             </div>
-            <div class="advancedCalculatorBody">
+            <div class="advancedCalculatorBody glowLabel">
             </div>
-            <div class="presetsCalculatorBody">
+            <div class="presetsCalculatorBody glowLabel">
+                <div class="presetButtonCentering">
+                    <button class="presetButton" id="basic136">Basic 13.6</button>
+                    <button class="presetButton" id="bus">Bus</button>
+                    <button class="presetButton" id="van">Van</button>
+                    <button class="presetButton" id="35ton">3.5 ton</button>
+                    <button class="presetButton" id="smallSet">Small set</button>
+                    <button class="presetButton" id="8ton">8 ton</button>
+                    <button class="presetButton" id="set">Set</button>
+                    <button class="presetButton" id="jumbo">Jumbo/Mega</button>
+                </div>
             </div>
             <br>
             <button class="calculateBtn" onclick="calculate()">Calculate</button>

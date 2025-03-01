@@ -29,6 +29,7 @@
                 <br>
                 <button type="submit">Login</button>
                 <div id="error-banner" class="error-banner" data-error="{{ error }}"></div>
+                <button type="button" onclick="window.location.href='{{ url_for('home') }}'">Back</button>
             </form>
         </div>
         <script src="{{ url_for('static', filename='adminPanel/adminPanelLoginScript.js') }}"></script>

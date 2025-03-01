@@ -25,6 +25,7 @@ body {
     padding-top: 60px;
     transition: 0.5s;
     user-select: none;
+    z-index: 1000;
 }
 
 .sidebar a {
