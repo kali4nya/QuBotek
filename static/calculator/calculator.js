@@ -1,3 +1,4 @@
+//design
 document.addEventListener("DOMContentLoaded", function () {
     const slider = document.getElementById("custom-toggle");
 
@@ -54,3 +55,40 @@ document.addEventListener("DOMContentLoaded", function () {
         updateCalculatorVisibility(this.value);
     });
 });
+
+//functionality
+function setPreset(arg){
+    if (arg === "basic136"){
+        document.getElementById("volumeMax").value = 80;
+        document.getElementById("loadingAreaMax").value = 13.20;
+        document.getElementById("weightMax").value = 24000;
+    }else if(arg === "bus"){
+        document.getElementById("volumeMax").value = 25;
+        document.getElementById("loadingAreaMax").value = 3.20;
+        document.getElementById("weightMax").value = 1200;
+    }else if(arg === "van"){
+        document.getElementById("volumeMax").value = 10;
+        document.getElementById("loadingAreaMax").value = 2.40;
+        document.getElementById("weightMax").value = 900;
+    }else if(arg === "35ton"){
+        document.getElementById("volumeMax").value = 33;
+        document.getElementById("loadingAreaMax").value = 5.60;
+        document.getElementById("weightMax").value = 3500;
+    }else if(arg === "smallSet"){
+        document.getElementById("volumeMax").value = 68;
+        document.getElementById("loadingAreaMax").value = 10.40;
+        document.getElementById("weightMax").value = 6500;
+    }else if(arg === "8ton"){
+        document.getElementById("volumeMax").value = 45;
+        document.getElementById("loadingAreaMax").value = 7.20;
+        document.getElementById("weightMax").value = 8000;
+    }else if(arg === "set"){
+        document.getElementById("volumeMax").value = 120;
+        document.getElementById("loadingAreaMax").value = 15.20;
+        document.getElementById("weightMax").value = 22000;
+    }else if(arg === "jumbo"){
+        document.getElementById("volumeMax").value = 105;
+        document.getElementById("loadingAreaMax").value = 13.20;
+        document.getElementById("weightMax").value = 24000;
+    }
+}

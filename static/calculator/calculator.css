@@ -12,14 +12,14 @@
     min-width: 25%;
     min-height: 22vw;
     display: inline-block;
-    background-color: rgb(207, 97, 0);
+    background-color: rgb(224, 105, 0);
     visibility: hidden;
 }
 .advancedCalculatorBody{
     min-width: 25%;
     min-height: 22vw;
     display: inline-block;
-    background-color: rgb(168, 0, 0);
+    background-color: rgb(202, 0, 0);
     visibility: hidden;
 }
 .presetsCalculatorBody{
@@ -27,8 +27,8 @@
     min-height: 22vw;
     margin-left: 4%;
     display: inline-block;
-    background-color: rgb(128, 65, 94);
-    transition: transform 0.4s cubic-bezier(0.6, -0.16, 0.2, 1.1);
+    background-color: rgb(160, 55, 104);
+    transition: transform 0.4s ease;
 }
 
 .resultsCalculatorBody{
@@ -74,6 +74,7 @@
     box-shadow: 0 0 8px rgba(251, 0, 155, 0.6), 0 0 7px rgba(176, 0, 0, 0.4);
     background: linear-gradient(white, white) padding-box, 
                 linear-gradient(to right, #fb4f00, #b00000) border-box;
+    font-weight: 700;
 }
 
 /* calculate button */
@@ -205,6 +206,9 @@
 .col-span-2 {
     grid-column: span 2 / span 2;
     grid-column: span var(2) / span var(2);
+    font-style: bold;
+    font-weight: 600;
+    font-family: "Noto Sans", serif;
 }
 
 .presetButton{
@@ -225,7 +229,7 @@
     display: block;
     align-self: center;
     margin-top: 5.1%;
-    min-width: 7vw;
+    min-width: 7.6vw;
 }
 .presetButton:hover{
     background-color: #6699f8;
@@ -246,4 +250,7 @@
 
 .maxMaxWidth{
     max-width: 2vw;
+    font-style: bold;
+    font-weight: 600;
+    font-family: "Noto Sans", serif;
 }
