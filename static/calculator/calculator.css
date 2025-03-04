@@ -56,7 +56,7 @@
 
 .inputFormating {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 4vw));
+    grid-template-columns: auto repeat(5, minmax(0, 4vw));
     gap: 0.5rem;
     margin-top: 0.6%;
 }
@@ -203,8 +203,7 @@
 }
 
 .col-span-2 {
-    grid-column: span 2 / span 2;
-    grid-column: span var(2) / span var(2);
+    grid-column: span 2;
     font-style: bold;
     font-weight: 600;
     font-family: "Noto Sans", serif;
@@ -273,8 +272,8 @@
 }
 
 .a80checkmark {
-    width: 1.1vw;
-    height: 1.1vw;
+    width: 1.3vw;
+    height: 0.9vw;
     border: 2px solid #333;
     border-radius: 5px;
     display: inline-block;
@@ -291,10 +290,10 @@
 .a80checkbox input:checked + .a80checkmark::after {
     content: '';
     position: absolute;
-    left: 4px;
-    top: 1.8px;
-    width: 5px;
-    height: 8px;
+    left: 0.15vw;
+    top: 0.05vw;
+    width: 0.4vw;
+    height: 0.4vw;
     border: solid white;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
