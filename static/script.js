@@ -1,3 +1,4 @@
+//design
 function toggleSidebar(event) {
     event.preventDefault();  // Prevent the anchor link's default behavior
     document.getElementById("sidebar").classList.toggle("active");

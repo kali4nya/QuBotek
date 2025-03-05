@@ -86,23 +86,39 @@
             <div class="additionalCalculatorBody glowLabel">
                 <div class="inputs">
                     <div class="inputFormating">
-                        <label class="col-span-2" for="loading price">Loading price:</label>
+                        <label class="col-span-2" for="loadingPrice">Loading price:</label>
                         <input type="text" id="loadingPrice" class="col-span-2" placeholder="Loading price" value="75">
                     </div>
                     <div class="inputFormating calcJustTopMargin">
-                        <label class="col-span-2" for="unloading price">Unloading price:</label>
+                        <label class="col-span-2" for="unloadingPrice">Unloading price:</label>
                         <input type="text" id="UnloadingPrice" class="col-span-2" placeholder="Unloading price" value="75">
                     </div>
                     <br>
                     <label class="a80checkbox">
-                        <input type="checkbox" id="a80checkbox">
+                        <input type="checkbox" id="lowerWhenAbove80">
                         <span class="a80checkmark"></span>
                         Lower the loading costs by 50% when loaded above 80%
                     </label>
                 </div>
             </div>
-            <div class="advancedCalculatorBody glowLabel">
-            </div>
+                <div class="advancedCalculatorBody glowLabel">
+                    <div class="inputs">
+                        <div class="inputFormating">
+                            <label class="col-span-2" for="additionalValue">Additional value:</label>
+                            <input type="text" id="additionalValue" class="col-span-2" placeholder="Additional value" value="">
+                        </div>
+                        <div class="inputFormating calcJustTopMargin">
+                            <label class="col-span-2" for="scaleFactor">Scale factor[%]:</label>
+                            <input type="text" id="scaleFactor" class="col-span-2" placeholder="Scale factor:" value="">
+                        </div>
+                        <br>
+                        <label class="Advanceda80checkbox">
+                            <input type="checkbox" id="coeff">
+                            <span class="Advanceda80checkmark"></span>
+                            Use coeff to calculate the prices
+                        </label>
+                    </div>
+                </div>
             <div class="presetsCalculatorBody glowLabel">
                 <div class="presetButtonCentering">
                     <button class="presetButton" id="basic136" onclick="setPreset('basic136')">Basic 13.6</button>

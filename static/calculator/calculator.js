@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-//functionality
+//functionality //setting max values
 function setPreset(arg){
     if (arg === "basic136"){
         document.getElementById("volumeMax").value = 80;
@@ -92,3 +92,4 @@ function setPreset(arg){
         document.getElementById("weightMax").value = 24000;
     }
 }
+//functionality //calculating using coefficients

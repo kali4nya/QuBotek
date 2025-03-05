@@ -1,14 +1,23 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 import json
+import csv
 
 app = Flask(__name__)
 app.secret_key = "oohhverysecretkey"  # Change this to something secure
 
+#admin panel things
 def load_credentials():
     with open('static/adminPanel/credentials.json') as f:
         return json.load(f)
 
 USER_CREDENTIALS = load_credentials()
+
+#csv things
+def read_csv(filename):
+    with open(filename, newline='', encoding='utf-8') as f:
+        reader = csv.reader(f)
+        data = list(reader)
+    return data
 
 @app.route('/')
 def home():
@@ -31,7 +40,8 @@ def adminPanelLogin():
 @app.route('/adminPanel')
 def adminPanel():
     if 'user' in session:  # Check if the user is logged in
-        return render_template('adminPanel.html', user=session['user'])
+        data = read_csv('static/calculator/coeff.csv')
+        return render_template('adminPanel.html', user=session['user'], data=data)
     return redirect(url_for('adminPanelLogin'))
 
 @app.route('/logout')

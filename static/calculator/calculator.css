@@ -16,7 +16,7 @@
     visibility: hidden;
 }
 .advancedCalculatorBody{
-    min-width: 25%;
+    width: 25%;
     min-height: 22vw;
     display: inline-block;
     background-color: rgb(202, 0, 0);
@@ -288,6 +288,47 @@
 }
 
 .a80checkbox input:checked + .a80checkmark::after {
+    content: '';
+    position: absolute;
+    left: 0.15vw;
+    top: 0.05vw;
+    width: 0.4vw;
+    height: 0.4vw;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.Advanceda80checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 1.1vw;
+    cursor: pointer;
+    user-select: none;
+    text-wrap: wrap;
+}
+
+.Advanceda80checkbox input {
+    display: none;
+}
+
+.Advanceda80checkmark {
+    width: 0.9vw;
+    height: 0.9vw;
+    border: 2px solid #333;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.Advanceda80checkbox input:checked + .Advanceda80checkmark {
+    background-color: #af4ca8;
+    border-color: #ae49a8;
+}
+
+.Advanceda80checkbox input:checked + .Advanceda80checkmark::after {
     content: '';
     position: absolute;
     left: 0.15vw;

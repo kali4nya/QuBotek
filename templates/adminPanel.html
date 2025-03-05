@@ -15,7 +15,36 @@
     </head>
     <body>
         <h2>Welcome, {{ user }}!</h2>
-        <p>You are logged in.</p>
+        <p>You are now logged in. Remember to log out later</p>
+        <br>
+        <h2>Admin Coeff Data Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    {% for col in data[0] %}
+                    <th>{{ col }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data[1:] %}
+                <tr>
+                    {% for cell in row %}
+                    <td><input type="text" value="{{ cell }}" readonly></td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <label class="toggle-switch">
+            <input type="checkbox" id="editToggle">
+            <span class="slider"></span>
+        </label>
+        
+        <span id="toggleLabel">Enable Editing</span>
+        <button onclick="saveData()">Save</button>
+        <br>
         <a href="{{ url_for('logout') }}">Logout</a>
         <script src="{{ url_for('static', filename='adminPanel/adminPanelScript.js') }}"></script>
     </body>
